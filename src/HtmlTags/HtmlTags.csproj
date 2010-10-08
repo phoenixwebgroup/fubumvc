@@ -61,6 +61,8 @@
     <Compile Include="BrTag.cs" />
     <Compile Include="Cache.cs" />
     <Compile Include="CheckboxTag.cs" />
+    <Compile Include="Constants\MimeTypeConstants.cs" />
+    <Compile Include="ScriptTag.cs" />
     <Compile Include="Constants\ClearStyleConstants.cs" />
     <Compile Include="Constants\DisplayStyleConstants.cs" />
     <Compile Include="Constants\HtmlStyleConstants.cs" />
@@ -75,13 +77,17 @@
     <Compile Include="HtmlDocument.cs" />
     <Compile Include="HtmlTag.cs" />
     <Compile Include="Constants\InputTypeConstants.cs" />
+    <Compile Include="InputButtonTag.cs" />
     <Compile Include="InputTag.cs" />
     <Compile Include="JsonUtil.cs" />
+    <Compile Include="LabelTag.cs" />
     <Compile Include="LinkTag.cs" />
     <Compile Include="NoTag.cs" />
     <Compile Include="SelectTag.cs" />
     <Compile Include="SharedExtensions.cs" />
+    <Compile Include="SubmitButtonTag.cs" />
     <Compile Include="TableTag.cs" />
+    <Compile Include="TextAreaTag.cs" />
     <Compile Include="TextboxTag.cs" />
   </ItemGroup>
   <ItemGroup>
