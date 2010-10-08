@@ -62,6 +62,9 @@
     <Compile Include="Cache.cs" />
     <Compile Include="CheckboxTag.cs" />
     <Compile Include="Constants\MimeTypeConstants.cs" />
+    <Compile Include="EmptyTag.cs" />
+    <Compile Include="ImageTag.cs" />
+    <Compile Include="ListItemTag.cs" />
     <Compile Include="ScriptTag.cs" />
     <Compile Include="Constants\ClearStyleConstants.cs" />
     <Compile Include="Constants\DisplayStyleConstants.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="SharedExtensions.cs" />
     <Compile Include="SubmitButtonTag.cs" />
     <Compile Include="TableTag.cs" />
+    <Compile Include="Tags.cs" />
     <Compile Include="TextAreaTag.cs" />
     <Compile Include="TextboxTag.cs" />
   </ItemGroup>
