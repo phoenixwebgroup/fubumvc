@@ -3,7 +3,9 @@ using System.Linq;
 
 namespace HtmlTags
 {
-    public class SelectTag : HtmlTag
+	using Constants;
+
+	public class SelectTag : HtmlTag
     {
         private const string SelectedAttributeKey = "selected";
 
@@ -72,5 +74,17 @@ namespace HtmlTags
 
             optionTag.Attr(SelectedAttributeKey, SelectedAttributeKey);
         }
+
+		public SelectTag AllowMultiple()
+		{
+			Attr(HtmlAttributeConstants.Multiple, HtmlAttributeConstants.Multiple);
+			return this;
+		}
+
+		public SelectTag Rows(int rows)
+		{
+			Attr(HtmlAttributeConstants.Size, rows);
+			return this;
+		}
     }
 }
