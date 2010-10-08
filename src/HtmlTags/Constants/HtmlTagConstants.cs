@@ -26,5 +26,6 @@ namespace HtmlTags.Constants
 		public const string Head = "head";
 		public const string Html = "html";
 		public const string Img = "img";
+		public const string Select = "select";
 	}
 }

@@ -19,13 +19,6 @@
 			return this;
 		}
 
-		public InputTag Name(string name)
-		{
-			// todo should we move this up a level to HtmlTag?
-			Attr(HtmlAttributeConstants.Name, name);
-			return this;
-		}
-
 		public InputTag Value(string value)
 		{
 			Attr(HtmlAttributeConstants.Value, value);

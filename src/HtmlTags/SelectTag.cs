@@ -10,7 +10,7 @@ namespace HtmlTags
         private const string SelectedAttributeKey = "selected";
 
         public SelectTag()
-            : base("select")
+            : base(HtmlTagConstants.Select)
         {
         }
 

@@ -9,7 +9,9 @@ using System.Web.UI;
 
 namespace HtmlTags
 {
-    public interface ITagSource
+	using Constants;
+
+	public interface ITagSource
     {
         IEnumerable<HtmlTag> AllTags();
     }
@@ -77,6 +79,12 @@ namespace HtmlTags
             _children.AddRange(tags);
             return this;
         }
+
+		public HtmlTag AddChildren(params HtmlTag[] tags)
+		{
+			_children.AddRange(tags);
+			return this;
+		}
 
         public string TagName()
         {
@@ -393,7 +401,9 @@ namespace HtmlTags
 
         public bool IsInputElement()
         {
-            return _tag == "input" || _tag == "select";
+        	return String.Equals(_tag, HtmlTagConstants.Input, StringComparison.InvariantCultureIgnoreCase)
+        	       || String.Equals(_tag, HtmlTagConstants.Select, StringComparison.InvariantCultureIgnoreCase)
+        	       || String.Equals(_tag, HtmlTagConstants.TextArea, StringComparison.InvariantCultureIgnoreCase);
         }
 
         public void ReplaceChildren(params HtmlTag[] tags)
@@ -449,6 +459,12 @@ namespace HtmlTags
             EncodeInnerText = false;
             return this;
         }
+
+    	public HtmlTag Name(string name)
+    	{
+    		Attr(HtmlAttributeConstants.Name, name);
+    		return this;
+    	}
     }
 
     public static class TagExtensions
