@@ -57,16 +57,24 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="BaseTag.cs" />
     <Compile Include="BrTag.cs" />
     <Compile Include="Cache.cs" />
     <Compile Include="CheckboxTag.cs" />
-    <Compile Include="HtmlTagConstants.cs" />
+    <Compile Include="Constants\ClearStyleConstants.cs" />
+    <Compile Include="Constants\DisplayStyleConstants.cs" />
+    <Compile Include="Constants\HtmlStyleConstants.cs" />
+    <Compile Include="Constants\HtmlAttributeConstants.cs" />
+    <Compile Include="Constants\HtmlTagConstants.cs" />
+    <Compile Include="Constants\JavascriptEventConstants.cs" />
+    <Compile Include="Constants\TextAlignConstants.cs" />
     <Compile Include="DivTag.cs" />
     <Compile Include="DLTag.cs" />
     <Compile Include="FormTag.cs" />
     <Compile Include="HiddenTag.cs" />
     <Compile Include="HtmlDocument.cs" />
     <Compile Include="HtmlTag.cs" />
+    <Compile Include="Constants\InputTypeConstants.cs" />
     <Compile Include="JsonUtil.cs" />
     <Compile Include="LinkTag.cs" />
     <Compile Include="NoTag.cs" />

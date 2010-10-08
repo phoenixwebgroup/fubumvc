@@ -1,4 +1,4 @@
-namespace HtmlTags
+namespace HtmlTags.Constants
 {
 	public class HtmlTagConstants
 	{
