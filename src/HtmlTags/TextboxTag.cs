@@ -1,17 +1,18 @@
 namespace HtmlTags
 {
-    public class TextboxTag : HtmlTag
+	using Constants;
+
+	public class TextboxTag : InputTag
     {
         public TextboxTag()
-            : base("input")
         {
-            Attr("type", "text");
+        	Type(InputTypeConstants.Submit);
         }
 
         public TextboxTag(string name, string value) : this()
         {
-            Attr("name", name);
-            Attr("value", value);
+            Attr(HtmlAttributeConstants.Name, name);
+            Attr(HtmlAttributeConstants.Value, value);
         }
     }
 }
