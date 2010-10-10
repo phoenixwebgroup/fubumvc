@@ -6,7 +6,7 @@ namespace HtmlTags
     {
         public TextboxTag()
         {
-        	Type(InputTypeConstants.Submit);
+        	Type(InputTypeConstants.Text);
         }
 
         public TextboxTag(string name, string value) : this()
