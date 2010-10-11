@@ -53,7 +53,7 @@ namespace HtmlTags
             return new HtmlTag("option").Text(display).Attr("value", value);
         }
 
-        public void SelectByValue(object value)
+        public void SelectByValue(string value)
         {
             var child = Children.FirstOrDefault(x => x.Attr("value").Equals(value));
 
