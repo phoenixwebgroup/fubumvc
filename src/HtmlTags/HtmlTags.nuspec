@@ -10,5 +10,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Additions to base fubu HtmlTags project</description>
     <tags>HtmlTags DotNetExtensions</tags>
+	<dependencies>
+	  <dependency id="CommonServiceLocator" version="1.0" />
+	</dependencies>
   </metadata>
+  <files>
+	<file src="..\..\build\FubuMVC.UI.*" target="lib\net35"/>
+	<file src="..\..\build\FubuMVC.Core.*" target="lib\net35"/>
+	<file src="..\..\build\FubuCore.*" target="lib\net35"/>
+  </files>
 </package>
