@@ -1,5 +1,5 @@
 COMPILE_TARGET = ENV['config'].nil? ? "debug" : ENV['config']
-require "build_support/BuildUtils.rb"
+load "build_support/BuildUtils.rb"
 
 include FileTest
 require 'albacore'
@@ -109,3 +109,11 @@ zip :package35 do |zip|
 	zip.output_file = 'fubumvc_net35.zip'
 	zip.output_path = [props[:artifacts]]
 end
+
+$nugetFeedPath = ENV["NuGetDevFeed"]
+
+task :nuget_DotNetExtensions do
+	sh "nuget pack src\\HtmlTags\\HtmlTags.csproj /OutputDirectory " + $nugetFeedPath
+end
+
+
