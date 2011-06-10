@@ -112,7 +112,7 @@ end
 
 $nugetFeedPath = ENV["NuGetDevFeed"]
 
-task :nuget_DotNetExtensions do
+task :nuget_DotNetExtensions => [:compile] do
 	sh "nuget pack src\\HtmlTags\\HtmlTags.csproj /OutputDirectory " + $nugetFeedPath
 end
 
