@@ -18,5 +18,6 @@ namespace HtmlTags.Constants
 		public const string Multiple = "multiple";
 		public const string Size = "size";
 		public const string Alt = "alt";
+		public const string Rowspan = "rowspan";
 	}
 }

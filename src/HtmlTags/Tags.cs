@@ -6,10 +6,7 @@
 	{
 		public static SelectTag Select
 		{
-			get
-			{
-				return new SelectTag();
-			}
+			get { return new SelectTag(); }
 		}
 
 		public static HtmlTag CssLink(string path)
@@ -152,6 +149,36 @@
 		public static HtmlTag HeadingTag(int size)
 		{
 			return new HtmlTag("h" + size);
+		}
+
+		public static HtmlTag Param
+		{
+			get { return new HtmlTag(HtmlTagConstants.Param); }
+		}
+
+		public static HtmlTag Object
+		{
+			get { return new HtmlTag(HtmlTagConstants.Object); }
+		}
+
+		public static HtmlTag IFrame
+		{
+			get { return new HtmlTag(HtmlTagConstants.IFrame); }
+		}
+
+		public static HtmlTag FieldSet
+		{
+			get { return new HtmlTag(HtmlTagConstants.FieldSet); }
+		}
+
+		public static HtmlTag Legend
+		{
+			get { return new HtmlTag(HtmlTagConstants.Legend); }
+		}
+
+		public static TableRowTag TableRow
+		{
+			get { return new TableRowTag(); }
 		}
 	}
 }

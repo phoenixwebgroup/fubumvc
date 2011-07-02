@@ -27,5 +27,12 @@ namespace HtmlTags.Constants
 		public const string Html = "html";
 		public const string Img = "img";
 		public const string Select = "select";
+
+		public const string Param = "param";
+		public const string IFrame = "iframe";
+		public const string Object = "object";
+		public const string Legend = "legend";
+		public const string FieldSet = "fieldset";
+
 	}
 }
