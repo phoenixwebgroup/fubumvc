@@ -23,7 +23,7 @@
 		{
 			var base64 = Convert.ToBase64String(source, Base64FormattingOptions.None);
 			Attr(HtmlAttributeConstants.Src,
-				 string.Format("data:image/{0};base64,{1}", mimetype.ToLower(), HttpUtility.UrlEncode(base64, Encoding.Default)));
+				 string.Format("data:{0};base64,{1}", mimetype.ToLower(), HttpUtility.UrlEncode(base64, Encoding.Default)));
 			return this;
 		}
 
